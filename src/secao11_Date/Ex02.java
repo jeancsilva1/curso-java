@@ -27,6 +27,7 @@ public class Ex02 {
         d = cal.getTime();
         System.out.println(sdf.format(d));
         
+        System.out.println("OBTEM UNIDADE DE TEMPO DA DATA");
         int minutes = cal.get(Calendar.MINUTE);
         int month = 1 + cal.get(Calendar.MONTH);
         System.out.println("Minutes: " + minutes);
