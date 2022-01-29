@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package secao13_Enum_Composicao_02.Application.entities;
+package secao13_Enum_Composicao_02.entities;
 
 /**
  *

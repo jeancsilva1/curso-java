@@ -6,8 +6,8 @@
 package secao13_Enum_Composicao_02.Application;
 
 import java.util.Date;
-import secao13_Enum_Composicao_02.Application.entities.Comment;
-import secao13_Enum_Composicao_02.Application.entities.Post;
+import secao13_Enum_Composicao_02.entities.Comment;
+import secao13_Enum_Composicao_02.entities.Post;
 
 /**
  *
