@@ -8,8 +8,8 @@ package secao14_Heranca_Polimorfismo.Application;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import secao14_Heranca_Polimorfismo.model.entities.Employee;
-import secao14_Heranca_Polimorfismo.model.entities.OutsourcedEmployee;
+import secao14_Heranca_Polimorfismo.entities.Employee;
+import secao14_Heranca_Polimorfismo.entities.OutsourcedEmployee;
 
 /**
  *
