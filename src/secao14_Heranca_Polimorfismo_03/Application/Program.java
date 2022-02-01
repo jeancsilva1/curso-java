@@ -21,8 +21,7 @@ public class Program {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        Circle circle;
-        Rectangle rectangle;
+
         List<Shape> list = new ArrayList<>();
 
         System.out.print("Enter the number of shapes:");
@@ -38,7 +37,7 @@ public class Program {
             if (resp == 'c') {
                 System.out.print("Radius:");
                 double radius = in.nextDouble();
-                list.add (new Circle(radius, Color.valueOf(color)));
+                list.add(new Circle(radius, Color.valueOf(color)));
 
             } else {
                 System.out.print("Width:");
@@ -47,12 +46,11 @@ public class Program {
                 double height = in.nextDouble();
                 list.add(new Rectangle(width, height, Color.valueOf(color)));
             }
-            System.out.println("SHAPE AREAS:");
-            for (Shape shape : list) {
-                System.out.println(shape.area());
-                
-            }
 
+        }
+        System.out.println("SHAPE AREAS:");
+        for (Shape shape : list) {
+            System.out.println(shape.area());
         }
     }
 
