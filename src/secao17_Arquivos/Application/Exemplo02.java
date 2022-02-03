@@ -16,7 +16,7 @@ import java.io.IOException;
 public class Exemplo02 {
 
     public static void main(String[] args) {
-          //Efetuando leitura de arquivos utilizando a classe BUFFEREDREADER E FILEREADER
+        //Efetuando leitura de arquivos utilizando a classe BUFFEREDREADER E FILEREADER
         String path = "C:\\temp\\a.txt";
 
         try (BufferedReader br = new BufferedReader(new FileReader(path))) {
