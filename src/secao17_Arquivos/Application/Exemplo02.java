@@ -5,25 +5,28 @@
  */
 package secao17_Arquivos.Application;
 
-import java.io.File;
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
-import java.util.Scanner;
 
 /**
  *
  * @author Jean
  */
-public class Exemplo01 {
+public class Exemplo02 {
 
     public static void main(String[] args) {
-        //Efetuando leitura de arquivos utilizando a classe FILE
-        File file = new File("C:\\temp\\a.txt");
-        Scanner in = null;
-        try {
-            in = new Scanner(file);
-            while (in.hasNext()) {
-                System.out.println(in.nextLine());
+          //Efetuando leitura de arquivos utilizando a classe BUFFEREDREADER E FILEREADER
+        String path = "C:\\temp\\a.txt";
+
+        try (BufferedReader br = new BufferedReader(new FileReader(path))) {
+            String line = br.readLine();
+            while (line != null) {
+                System.out.println(line);
+                line = br.readLine();
+
             }
+
         } catch (IOException e) {
             System.out.println("ERRO: " + e.getMessage());
         }
