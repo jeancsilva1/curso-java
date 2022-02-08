@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package secao18_Generics_Set_Map.Application;
+package secao19_Generics_Set_Map.Application;
 
 import java.util.Scanner;
-import secao18_Generics_Set_Map.services.PrintService;
+import secao19_Generics_Set_Map.services.PrintService;
 
 /**
  *
