@@ -27,9 +27,10 @@ public class Program {
             ps.addValue(in.nextInt());
             in.nextLine();
         }
-        System.out.println("First:" + ps.first());
 
         ps.print();
+        System.out.println("");
+        System.out.println("First:" + ps.first());
 
     }
 }
