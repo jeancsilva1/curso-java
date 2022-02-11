@@ -26,7 +26,9 @@ public class Program03 {
         list.add(new Product("Iphone", 700.0));
         list.add(new Product("Mouse", 50.0));
         
-        list.forEach(new PriceUpdate());
+        //list.forEach(new PriceUpdate());
+        //Expressao consumer inline
+        list.forEach(p -> p.setPrice(p.getPrice() * 1.1));
         
         list.forEach(System.out::println);
 
