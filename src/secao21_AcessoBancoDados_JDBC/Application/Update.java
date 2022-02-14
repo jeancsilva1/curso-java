@@ -38,6 +38,11 @@ public class Update {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        
+        finally {
+            DB.closeStatement(pst);
+            DB.closeConnection();
+        }
     }
 
 }
