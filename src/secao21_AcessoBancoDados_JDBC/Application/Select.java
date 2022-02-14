@@ -35,9 +35,9 @@ public class Select {
             e.printStackTrace();
         }
         finally {
-            DB.closeConnection();
             DB.closeResultSet(rs);
             DB.closeStatement(st);
+            DB.closeConnection();
         }
     }
     
