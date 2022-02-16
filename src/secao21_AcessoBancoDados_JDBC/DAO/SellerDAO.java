@@ -6,6 +6,7 @@
 package secao21_AcessoBancoDados_JDBC.DAO;
 
 import java.util.List;
+import secao21_AcessoBancoDados_JDBC.entities.Department;
 import secao21_AcessoBancoDados_JDBC.entities.Seller;
 
 /**
@@ -19,5 +20,6 @@ public interface SellerDAO {
     void deleteById(Integer id);
     Seller findById(Integer id);
     List<Seller> findAll();
+    List<Seller> findByDepartment(Department department);
 
 }
