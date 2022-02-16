@@ -5,7 +5,10 @@
  */
 package secao21_AcessoBancoDados_JDBC.DAO;
 
+import java.sql.Connection;
 import secao21_AcessoBancoDados_JDBC.DAO.implement.SellerDaoJDBC;
+import secao21_AcessoBancoDados_JDBC.db.DB;
+
 
 /**
  *
@@ -14,7 +17,9 @@ import secao21_AcessoBancoDados_JDBC.DAO.implement.SellerDaoJDBC;
 public class DAOFactory {
     
     public static SellerDAO createSellerDao(){
-        return new SellerDaoJDBC();
+        //Connection conn = DB.getConnection();
+        
+        return new SellerDaoJDBC(DB.getConnection());
     }
     
 }

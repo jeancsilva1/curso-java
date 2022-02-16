@@ -5,8 +5,9 @@
  */
 package secao21_AcessoBancoDados_JDBC.Application;
 
-import java.sql.Connection;
-import secao21_AcessoBancoDados_JDBC.db.DB;
+import secao21_AcessoBancoDados_JDBC.DAO.DAOFactory;
+import secao21_AcessoBancoDados_JDBC.DAO.SellerDAO;
+import secao21_AcessoBancoDados_JDBC.entities.Seller;
 
 /**
  *
@@ -14,9 +15,10 @@ import secao21_AcessoBancoDados_JDBC.db.DB;
  */
 public class Program {
     public static void main(String[] args) {
-        Connection conn = DB.getConnection();
-        
-        DB.closeConnection();
+       
+        SellerDAO sellerDAO = DAOFactory.createSellerDao();
+        Seller seller = sellerDAO.findById(3);
+        System.out.println(seller);
     }
     
 }
